@@ -12,7 +12,7 @@
 <nav class="bg-green-100 items-center justify-between p-3 flex shadow-xl sticky top-0 z-10">
     <h1 class="text-2xl">GREENDEN</h1>
 
-    <svg class="h-8 w-8 text-black items-center md:hidden"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <svg id="menuicon" class="h-8 w-8 text-black items-center md:hidden cursor-pointer"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
       </svg>
 
@@ -31,6 +31,27 @@
     </ul>
 
 </nav>
+
+<!--Side nav-->
+
+<section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-500" style="width: 50%; height: 100vh; right: -50%;">
+    <div class="text-right p-5">
+        <p id="closenav" class="inline cursor-pointer">X</p>
+    </div>
+    <ul class=" flex flex-col text-gray-600 gap-10 items-center">
+        <li>
+            <a class="hover:underline hover:text-black" href="index.html">Home</a>
+        </li>
+
+        <li>
+            <a class="hover:underline hover:text-black" href="product.html">Products</a>
+        </li>
+
+        <li>
+            <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+        </li>
+    </ul>
+</section>
 
 <!--header section-->
 <section class="bg-green-100 p-4 flex justify-center gap-5">
@@ -152,7 +173,7 @@
 </section>
 
 
-
+<script src="index.js"></script>
 
 </body>
 </html>
